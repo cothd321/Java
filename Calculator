@@ -1,0 +1,72 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Calculator {
+    public static void main(String[] args){
+        new MyCal();
+    }
+
+}
+
+
+class MyCal{
+    JFrame f;
+    JTextField jf;
+    JButton b0;
+    JButton b1;
+    JButton b2;
+    JButton b3;
+    JButton b4;
+    JButton b5;
+    JButton b6;
+    JButton b7;
+    JButton b8;
+    JButton b9;
+
+    JButton eq;
+    JButton clear;
+
+    public MyCal(){
+        f = new JFrame();
+        jf = new JTextField(15);
+        b0 = new JButton("0");
+        b1 = new JButton("1");
+        b2 = new JButton("2");
+        b3 = new JButton("3");
+        b4 = new JButton("4");
+        b5 = new JButton("5");
+        b6 = new JButton("6");
+        b7 = new JButton("7");
+        b8 = new JButton("8");
+        b9 = new JButton("9");
+        eq = new JButton("=");
+        clear = new JButton("clear");
+
+        clear.setBackground(Color.red);
+
+        f.setLocation(300,300);
+        f.setSize(200,200);
+
+        FlowLayout layout = new FlowLayout();
+        f.setLayout(layout);
+
+        f.add(jf);
+        f.add(b0);
+        f.add(b1);
+        f.add(b2);
+        f.add(b3);
+        f.add(b4);
+        f.add(b5);
+        f.add(b6);
+        f.add(b7);
+        f.add(b8);
+        f.add(b9);
+        f.add(eq);
+        f.add(clear);
+
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        f.setVisible(true);
+
+            }
+}
